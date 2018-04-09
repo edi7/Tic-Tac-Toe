@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.andriod.tictactoe.MainActivity">
+
+   <TextView
+       android:id="@+id/free"
+       android:layout_width="wrap_content"
+       android:layout_height="200dp"
+       android:layout_centerInParent="true"
+       android:layout_alignParentTop="true"
+       android:text="Free Tic Tac Toe Game"
+       android:textSize="20dp"
+       />
+    <Button
+        android:id="@+id/player_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/free"
+        android:onClick="playerOne"
+        android:textColor="#890725"
+        android:text="one player" />
+
+    <Button
+
+        android:id="@+id/player_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="playerTwo"
+        android:layout_below="@+id/player_one"
+        android:textColor="#890725"
+        android:text="two player" />
+
+</RelativeLayout>
+</ScrollView>

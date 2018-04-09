@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.andriod.tictactoe.onePlayer">
+       <TextView
+        android:id="@+id/free"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:paddingTop="80dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:text="Select board size"
+        android:textAlignment="gravity"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/board3A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/free"
+        android:textColor="#890725"
+        android:text="3X3 board"
+        android:onClick="boardThreeA" />
+
+    <Button
+
+        android:id="@+id/board5A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/board3A"
+        android:textColor="#890725"
+        android:text="5X5 board"
+        android:onClick="boardFiveA" />
+
+
+
+</RelativeLayout>
+</ScrollView>
