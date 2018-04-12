@@ -20,7 +20,15 @@
         <activity android:name=".boardThree" />
         <activity android:name=".boardFive" />
         <activity android:name=".boardThreeComputer" />
-        <activity android:name=".broardFiveComputer"></activity>
+        <activity android:name=".broardFiveComputer" />
+        <activity android:name=".boardThreeO" />
+        <activity android:name=".boardFiveO" />
+        <activity android:name=".boardThreeComputerO" />
+        <activity android:name=".boardFiveComputerO" />
+        <activity android:name=".threeXO" />
+        <activity android:name=".fiveXO" />
+        <activity android:name=".threeComputerXO" />
+        <activity android:name=".fiveComputerXO"></activity>
     </application>
 
 </manifest>

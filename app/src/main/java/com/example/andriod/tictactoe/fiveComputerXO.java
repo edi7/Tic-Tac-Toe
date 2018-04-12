@@ -7,31 +7,30 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class onePlayer extends AppCompatActivity {
+public class fiveComputerXO extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_one_player);
+        setContentView(R.layout.activity_five_computer_xo);
 
 
         TextView user = (TextView) findViewById(R.id.free);
-
         Typeface userFont = Typeface.createFromAsset(getAssets(),  "fonts/fish.ttf");
 
         user.setTypeface(userFont);
 
     }
 
-    public void boardThreeA (View view){
+    public void fiveComputerX (View view){
 
-        Intent m = new Intent(onePlayer.this, threeComputerXO.class);
+        Intent m = new Intent(fiveComputerXO.this, broardFiveComputer.class);
         startActivity(m);
     }
 
-    public void boardFiveA (View view){
+    public void fiveComputerO (View view){
 
-        Intent n = new Intent(onePlayer.this, fiveComputerXO.class);
+        Intent n = new Intent(fiveComputerXO.this, boardFiveComputerO.class);
         startActivity(n);
     }
 

@@ -7,13 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class onePlayer extends AppCompatActivity {
+public class fiveXO extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_one_player);
-
+        setContentView(R.layout.activity_five_xo);
 
         TextView user = (TextView) findViewById(R.id.free);
 
@@ -23,15 +22,15 @@ public class onePlayer extends AppCompatActivity {
 
     }
 
-    public void boardThreeA (View view){
+    public void fiveX (View view){
 
-        Intent m = new Intent(onePlayer.this, threeComputerXO.class);
+        Intent m = new Intent(fiveXO.this, boardFive.class);
         startActivity(m);
     }
 
-    public void boardFiveA (View view){
+    public void fiveO (View view){
 
-        Intent n = new Intent(onePlayer.this, fiveComputerXO.class);
+        Intent n = new Intent(fiveXO.this, boardFiveO.class);
         startActivity(n);
     }
 

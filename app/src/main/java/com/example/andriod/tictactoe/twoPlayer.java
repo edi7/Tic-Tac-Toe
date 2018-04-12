@@ -27,13 +27,13 @@ public class twoPlayer extends AppCompatActivity {
 
     public void boardThree (View view){
 
-        Intent j = new Intent(twoPlayer.this, boardThree.class);
+        Intent j = new Intent(twoPlayer.this, threeXO.class);
         startActivity(j);
     }
 
     public void boardFive (View view){
 
-        Intent p = new Intent(twoPlayer.this, boardFive.class);
+        Intent p = new Intent(twoPlayer.this, fiveXO.class);
         startActivity(p);
     }
 
